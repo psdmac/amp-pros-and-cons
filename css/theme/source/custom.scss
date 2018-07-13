@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+
+$em-color: #e7ad52;
+
+.reveal .slides {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.reveal {
+    .r-section {
+        position: relative;
+        height: 100%;
+        padding: 0;
+        .bg-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-image: url('../../img/alex-wong-17993-unsplash.jpg');
+            background-size: cover; 
+        }
+        .banner-title {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 40px 25px;
+            background: rgba(#000, 0.8);
+            text-align: left;
+            h2 {
+                font-size: 22px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            h4 {
+                font-size: 16px;
+            }
+            @media (min-width: 480px) {
+                h2 {
+                    font-size: 1.2em;
+                }
+                h3 {
+                    font-size: 1em;
+                }
+                h4 {
+                    font-size: 0.8em;
+                }
+            }
+        }
+        .img-credit {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+    }
+    .time-location {
+        text-align: right;
+        display: inline-block;
+        padding: 3px 8px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-size: 18px;
+        a.appworks {
+            color: #ff6b0f
+        }
+    }
+    .half-bg {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        left: 0;
+        top: 0;
+        .circle-img {
+            width: 120px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            overflow: hidden;
+            .inner {
+                width: 100%;
+                padding-top: 100%;
+                background: #fff;
+                background-image: url('../../img/mark_wu.jpg');
+                background-size: cover;
+                background-position: 50% 50%;
+            }
+            
+        }
+        @media (min-width: 480px) {
+            width: 45%;
+            height: 100%;
+            .circle-img {
+                width: 60%;
+            }
+        }
+        
+
+        
+        .mask {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            opacity: 0.2;
+        }
+    }
+    .content-right {
+        width: 100%;
+        position: absolute;
+        top: 200px;
+        right: 0;
+        padding: 0;
+        h2 {
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 20px;
+        }
+        @media (min-width: 480px) {
+            width: 55%;
+            height: 100%;
+            top: 0;
+            padding: 100px 0;
+            .spacer {
+                height: 20px;
+            }
+            h2 {
+                font-size: 1em;
+            }
+            h3 {
+                font-size: 1.2em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+        .logo-group {
+            text-align: center;
+            .logo {
+                width: 120px;
+                height: 120px;
+                @media (min-width: 769px) {
+                    width: 120px;
+                    height: 120px;
+                }
+                display: inline-block;
+                margin: 10px 0;
+                img {
+                    width: 100%;
+                    margin: 0;
+                    border: 0;
+                    background: transparent;
+                    border-radius: 23px;
+                    &.white-bg {
+                        background: #fff;
+                    }
+                }
+            }
+        }
+
+    }
+    .question-bg, .danger-bg {
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        @media (min-width: 769px) {
+            width: 50%;
+            height: 100%;
+        }
+        top: 0;
+        left: 0;
+        background: url('../../img/edwin-andrade-153753-unsplash.jpg');
+        background-size: cover;
+        background-position-y: 100%;
+        .img-credit {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+    }
+    .danger-bg {
+        background: url('../../img/peter-john-maridable-53936-unsplash.jpg');
+        background-size: cover;
+        background-position: 50% 50%;
+        text-align: right;
+        padding: 20px;
+        .btn {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            border: 0;
+            border-radius: 50%;
+            background: rgba(#fff, 0.9);
+            font-size: 20px;
+        }
+    }
+    .half-left, .half-right {
+        width: 100%;
+        height: 30%;
+        float: left;
+        h2 {
+            font-size: 24px;
+        }
+    }
+    .half-right {
+        height: 70%;
+        font-size: 20px;
+        padding: 30px 10px;
+    }
+    @media (min-width: 769px) {
+        .half-left, .half-right {
+            width: 50%;
+            height: 100%;
+            float: left;
+            padding: 80px 0;
+            font-size: 36px;
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+    }
+    .m-modal {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(#000, 0.6);
+        top: 0;
+        left: 0;
+    }
+}
+
+.em-color {
+    color: $em-color;
+}
+
+

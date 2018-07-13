@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box; }
+
+.reveal .slides {
+  width: 100% !important;
+  height: 100% !important; }
+
+.reveal .r-section {
+  position: relative;
+  height: 100%;
+  padding: 0; }
+  .reveal .r-section .bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../../img/alex-wong-17993-unsplash.jpg");
+    background-size: cover; }
+  .reveal .r-section .banner-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 25px;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: left; }
+    .reveal .r-section .banner-title h2 {
+      font-size: 22px; }
+    .reveal .r-section .banner-title h3 {
+      font-size: 18px; }
+    .reveal .r-section .banner-title h4 {
+      font-size: 16px; }
+    @media (min-width: 480px) {
+      .reveal .r-section .banner-title h2 {
+        font-size: 1.2em; }
+      .reveal .r-section .banner-title h3 {
+        font-size: 1em; }
+      .reveal .r-section .banner-title h4 {
+        font-size: 0.8em; } }
+  .reveal .r-section .img-credit {
+    position: absolute;
+    top: 5px;
+    left: 5px; }
+
+.reveal .time-location {
+  text-align: right;
+  display: inline-block;
+  padding: 3px 8px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 18px; }
+  .reveal .time-location a.appworks {
+    color: #ff6b0f; }
+
+.reveal .half-bg {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  left: 0;
+  top: 0; }
+  .reveal .half-bg .circle-img {
+    width: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    overflow: hidden; }
+    .reveal .half-bg .circle-img .inner {
+      width: 100%;
+      padding-top: 100%;
+      background: #fff;
+      background-image: url("../../img/mark_wu.jpg");
+      background-size: cover;
+      background-position: 50% 50%; }
+  @media (min-width: 480px) {
+    .reveal .half-bg {
+      width: 45%;
+      height: 100%; }
+      .reveal .half-bg .circle-img {
+        width: 60%; } }
+  .reveal .half-bg .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.2; }
+
+.reveal .content-right {
+  width: 100%;
+  position: absolute;
+  top: 200px;
+  right: 0;
+  padding: 0; }
+  .reveal .content-right h2 {
+    font-size: 20px; }
+  .reveal .content-right h3 {
+    font-size: 24px; }
+  .reveal .content-right p {
+    font-size: 20px; }
+  @media (min-width: 480px) {
+    .reveal .content-right {
+      width: 55%;
+      height: 100%;
+      top: 0;
+      padding: 100px 0; }
+      .reveal .content-right .spacer {
+        height: 20px; }
+      .reveal .content-right h2 {
+        font-size: 1em; }
+      .reveal .content-right h3 {
+        font-size: 1.2em; }
+      .reveal .content-right p {
+        font-size: 1em; } }
+  .reveal .content-right .logo-group {
+    text-align: center; }
+    .reveal .content-right .logo-group .logo {
+      width: 120px;
+      height: 120px;
+      display: inline-block;
+      margin: 10px 0; }
+      @media (min-width: 769px) {
+        .reveal .content-right .logo-group .logo {
+          width: 120px;
+          height: 120px; } }
+      .reveal .content-right .logo-group .logo img {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        background: transparent;
+        border-radius: 23px; }
+        .reveal .content-right .logo-group .logo img.white-bg {
+          background: #fff; }
+
+.reveal .question-bg, .reveal .danger-bg {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  top: 0;
+  left: 0;
+  background: url("../../img/edwin-andrade-153753-unsplash.jpg");
+  background-size: cover;
+  background-position-y: 100%; }
+  @media (min-width: 769px) {
+    .reveal .question-bg, .reveal .danger-bg {
+      width: 50%;
+      height: 100%; } }
+  .reveal .question-bg .img-credit, .reveal .danger-bg .img-credit {
+    position: absolute;
+    top: 5px;
+    left: 5px; }
+
+.reveal .danger-bg {
+  background: url("../../img/peter-john-maridable-53936-unsplash.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  text-align: right;
+  padding: 20px; }
+  .reveal .danger-bg .btn {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 20px; }
+
+.reveal .half-left, .reveal .half-right {
+  width: 100%;
+  height: 30%;
+  float: left; }
+  .reveal .half-left h2, .reveal .half-right h2 {
+    font-size: 24px; }
+
+.reveal .half-right {
+  height: 70%;
+  font-size: 20px;
+  padding: 30px 10px; }
+
+@media (min-width: 769px) {
+  .reveal .half-left, .reveal .half-right {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 80px 0;
+    font-size: 36px; }
+    .reveal .half-left h2, .reveal .half-right h2 {
+      font-size: 1.2em; } }
+
+.reveal .m-modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0; }
+
+.em-color {
+  color: #e7ad52; }
