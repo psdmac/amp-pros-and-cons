@@ -109,14 +109,33 @@
 						<p>Canonical AMP implementation</p>
 						<p><a target="_blank" href="https://www.ampproject.org/learn/showcases/">AMP ShowCase 裡面也有案例</a></p>
 						<p>電商複雜 UI<br> (加入/檢視/移除購物車/選規格)</p>
+						<p class="em-color">Google 隨時不玩的風險</p>
+						<img class="ecpay-cashier" src="./img/logo@3x.png" alt="ECPAY收銀台">
 					</div>
-					<div class="m-modal"></div>
+					<div class="m-modal">
+						<button class="close-modal-btn">
+							<i class="fas fa-times"></i>
+						</button>
+						<div id="ix-frame">
+							<iframe id="m-iframe" src="https://api-servicetest03.pipimy.com.tw/store/matric.tw" frameborder="0"></iframe>
+						</div>
+					</div>
+					<div class="d-modal">
+						<button class="close-modal-btn">
+							<i class="fas fa-times"></i>
+						</button>
+						<div id="laptop-frame">
+							<iframe id="m-iframe" src="https://api-servicetest03.pipimy.com.tw/store/matric.tw" frameborder="0"></iframe>
+						</div>
+					</div>
 				</section>
 			</div>
 		</div>
 
+		<script src="lib/js/jquery-3.3.1.min.js"></script>
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
+		<script src="js/main.js"></script>
 
 		<script>
 			// More info about config & dependencies:

@@ -229,15 +229,61 @@ $em-color: #e7ad52;
             }
         }
     }
-    .m-modal {
+    .m-modal, .d-modal {
         position: absolute;
         width: 100%;
         height: 100%;
-        background: rgba(#000, 0.6);
+        background: rgba(#000, 0.9);
         top: 0;
         left: 0;
+        transform: translateY(100%);
+        transition: 0.3s;
+        &.open {
+            transform: translateY(0);
+        }
+        #ix-frame {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            margin-left: -188px;
+            width: 375px;
+            height: 763px;
+            background: url('../../img/i-phone-8@3x.png');
+            background-size: cover;
+            padding: 97px 16px 62px 19px;
+        }
+        #laptop-frame {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            margin-left: -600px;
+            width: 1200px;
+            height: 100vh;
+            background: url('../../img/laptop-frame.png');
+            background-size: cover;
+            background-position-y: 0;
+            padding: 68px 32px 38px 25px;
+        }
+        #m-iframe {
+            width: 100%;
+            height: 100%;
+        }
+        
+    }
+    .close-modal-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 0;
+        background: rgba(#fff, 0.5);
+    }
+    img.ecpay-cashier {
+        width: 200px;
+        background: #fff;
     }
 }
+
+
 
 .em-color {
     color: $em-color;
