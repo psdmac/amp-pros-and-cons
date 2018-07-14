@@ -184,6 +184,18 @@
     height: 50%; }
   .reveal .half-left h2, .reveal .half-right h2 {
     font-size: 24px; }
+  .reveal .half-left .btn, .reveal .half-right .btn {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 20px;
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px; }
 
 .reveal .half-right {
   height: 70%;

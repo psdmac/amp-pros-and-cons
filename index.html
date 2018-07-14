@@ -13,6 +13,15 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
+    <meta itemprop="name" content="FEDC 2018 Front-End x Design Conference 工作坊 Workshop">
+    <meta itemprop="image" content="https://igcar.center/img/og-index.jpg">
+    <meta itemprop="description" content="AMP 的魔法：做的時候幹聲連連，做完之後讚聲連連 - Section 3 - AMP 怎麼做出複雜的互動效果 | 別懷疑，有種 Hack 的感覺是對的">
+
+    <meta property="og:title" content="FEDC 2018 Front-End x Design Conference 工作坊 Workshop" >
+    <meta property="og:url" content="http://fedc.motore.co">
+    <meta property="og:image" content="http://fedc.motore.co/img/og.png">
+    <meta property="og:description" content="AMP 的魔法：做的時候幹聲連連，做完之後讚聲連連 - Section 3 - AMP 怎麼做出複雜的互動效果 | 別懷疑，有種 Hack 的感覺是對的" >
+
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -163,7 +172,7 @@
 					
 				</section>
 
-				<section class="r-section">
+				<section class="r-section" data-state="demo-modal">
 					<div class="bg-img opacity"></div>
 					<div class="half-left h50">
 						<h2>Hack 2 顯示購物車內容</h2>
@@ -172,7 +181,10 @@
 						<p>submit-success</p>
 						<p>submit-error</p>
 						<p>amp-mustache</p>
-						<p class="em-color">用 API 影響 UI</p>
+            <p class="em-color">用 API 影響 UI</p>
+            <button class="d-modal-btn btn">
+              <i class="fas fa-desktop"></i>
+            </button>
 					</div>
 					<div class="half-right h50">
 						<pre><code data-trim contenteditable data-escape>
@@ -198,8 +210,16 @@
 	</div>    
 </template>
 						</code></pre>
-					</div>
-					
+          </div>
+          
+					<div class="d-modal">
+            <button class="close-modal-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <div id="laptop-frame">
+              <iframe id="m-iframe" src="https://api-servicetest03.pipimy.com.tw/store/matric.tw" frameborder="0"></iframe>
+            </div>
+          </div>
         </section>
         
         <section class="r-section" data-state="hack2-trigger">
@@ -207,7 +227,7 @@
             <div class="half-left h50">
               <h2>amp-form</h2>
               <p class="em-color">小心!!!</p>
-              <p>submit-success submit-error 只能放在第一層</p>
+              <p>submit-success submit-error<br> 只能放在第一層</p>
               <p>從 API 去控制 UI 邏輯</p>
               <p>status: false 回傳 404</p>
             </div>
@@ -227,6 +247,46 @@
             </div>
             <div class="half-right h50">
               <div id="hack-3"></div>
+            </div>
+          </section>
+
+          <section class="r-section">
+            <div class="bg-img opacity"></div>
+            <div class="half-left h50">
+              <h2>優勢</h2>
+              <ul>
+                <li class="em-color">頁面秒開</li>
+                <li class="em-color">更好的手機搜尋排名</li>
+                <li>圖片自帶 lazyload</li>
+                <li>是積木 大部分問題都丟給 Google</li>
+                <li>後勢看俏 厲害的 Component 越來越多</li>
+              </ul>
+            </div>
+            <div class="half-right h50">
+              <h2>付出的代價</h2>
+              <ul>
+                <li>需要大量的 Server-Side Render <br>來完成互動</li>
+                <li>事倍功半</li>
+                <li>同時維護兩個版本</li>
+                <li>只能等 Google 做好 Component</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="r-section">
+            <div class="bg-img opacity"></div>
+            <div class="half-left h50">
+              <h2>導入前先問問自己</h2>
+              <ul>
+                <li class="em-color">萬一同事不想學</li>
+                <li class="em-color">維護兩個版本工作量加倍</li>
+                <li>在團隊內講話份量<br>可能要請後端特別為 AMP 制定新的 API</li>
+              </ul>
+            </div>
+            <div class="half-right h50">
+              <h2>如果這些都不是問題</h2>
+              <p>那趕緊來導入 AMP 吧</p>
+              <p>前所未見的推廣力道</p>
             </div>
           </section>
         

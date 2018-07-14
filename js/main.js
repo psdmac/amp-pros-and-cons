@@ -30,6 +30,6 @@ Reveal.addEventListener('hack2-trigger', function() {
 });
 
 Reveal.addEventListener('hack3-trigger', function() {
-    $('#hack-3').html('<script async src="//jsfiddle.net/psdmac/m3dae2f7/31/embed/html/dark/"></script>');
+    $('#hack-3').html('<script async src="//jsfiddle.net/psdmac/tcobrw71/7/embed/html/dark/"></script>');
 });
 
