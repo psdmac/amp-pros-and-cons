@@ -17,6 +17,12 @@
     left: 0;
     background-image: url("../../img/alex-wong-17993-unsplash.jpg");
     background-size: cover; }
+    .reveal .r-section .bg-img.opacity {
+      opacity: 0.3; }
+  .reveal .r-section p, .reveal .r-section img {
+    position: relative; }
+    .reveal .r-section p.url, .reveal .r-section img.url {
+      background: rgba(0, 0, 0, 0.8); }
   .reveal .r-section .banner-title {
     position: absolute;
     bottom: 0;
@@ -164,12 +170,18 @@
     border: 0;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.9);
-    font-size: 20px; }
+    font-size: 20px;
+    padding: 0;
+    z-index: 1; }
 
 .reveal .half-left, .reveal .half-right {
+  position: relative;
   width: 100%;
   height: 30%;
-  float: left; }
+  float: left;
+  font-size: 20px; }
+  .reveal .half-left.h50, .reveal .half-right.h50 {
+    height: 50%; }
   .reveal .half-left h2, .reveal .half-right h2 {
     font-size: 24px; }
 
@@ -177,6 +189,8 @@
   height: 70%;
   font-size: 20px;
   padding: 30px 10px; }
+  .reveal .half-right.h50 {
+    height: 50%; }
 
 @media (min-width: 769px) {
   .reveal .half-left, .reveal .half-right {
@@ -186,7 +200,9 @@
     padding: 80px 0;
     font-size: 36px; }
     .reveal .half-left h2, .reveal .half-right h2 {
-      font-size: 1.2em; } }
+      font-size: 1.2em; }
+    .reveal .half-left.h50, .reveal .half-right.h50 {
+      height: 100%; } }
 
 .reveal .m-modal, .reveal .d-modal {
   position: absolute;
@@ -229,11 +245,17 @@
   top: 0;
   right: 0;
   border: 0;
-  background: rgba(255, 255, 255, 0.5); }
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0;
+  width: 30px;
+  height: 30px; }
 
 .reveal img.ecpay-cashier {
   width: 200px;
   background: #fff; }
+
+#hack-1, #hack-2, #hack-3 {
+  height: 100%; }
 
 .em-color {
   color: #e7ad52; }

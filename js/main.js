@@ -1,4 +1,4 @@
-$(document).ready(function() {
+Reveal.addEventListener('demo-modal', function() {
     var mModalBtn = $('.m-modal-btn'),
         dModalBtn = $('.d-modal-btn'),
         mModal = $('.m-modal'),
@@ -19,9 +19,17 @@ $(document).ready(function() {
     ixFrame.on('click', function(e) {
         e.stopPropagation();
     });
+});
 
-    $('.close-modal-btn').on('click', function() {
-        mModal.removeClass('open');
-        dModal.removeClass('open');
-    });
-})
+Reveal.addEventListener('hack1-trigger', function() {
+    $('#hack-1').html('<script async src="//jsfiddle.net/psdmac/eg37z6x2/50/embed/html,result/dark/"></script>');
+});
+
+Reveal.addEventListener('hack2-trigger', function() {
+    $('#hack-2').html('<script async src="//jsfiddle.net/psdmac/m3dae2f7/31/embed/html/dark/"></script>');
+});
+
+Reveal.addEventListener('hack3-trigger', function() {
+    $('#hack-3').html('<script async src="//jsfiddle.net/psdmac/m3dae2f7/31/embed/html/dark/"></script>');
+});
+

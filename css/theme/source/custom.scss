@@ -22,6 +22,15 @@ $em-color: #e7ad52;
             left: 0;
             background-image: url('../../img/alex-wong-17993-unsplash.jpg');
             background-size: cover; 
+            &.opacity {
+                opacity: 0.3;
+            }
+        }
+        p, img {
+            position: relative;
+            &.url {
+                background: rgba(#000, 0.8);
+            }
         }
         .banner-title {
             position: absolute;
@@ -202,18 +211,28 @@ $em-color: #e7ad52;
             border-radius: 50%;
             background: rgba(#fff, 0.9);
             font-size: 20px;
+            padding: 0;
+            z-index: 1;
         }
     }
     .half-left, .half-right {
+        position: relative;
         width: 100%;
         height: 30%;
         float: left;
+        font-size: 20px;
+        &.h50 {
+            height: 50%;
+        }
         h2 {
             font-size: 24px;
         }
     }
     .half-right {
         height: 70%;
+        &.h50 {
+            height: 50%;
+        }
         font-size: 20px;
         padding: 30px 10px;
     }
@@ -226,6 +245,9 @@ $em-color: #e7ad52;
             font-size: 36px;
             h2 {
                 font-size: 1.2em;
+            }
+            &.h50 {
+                height: 100%;
             }
         }
     }
@@ -268,7 +290,6 @@ $em-color: #e7ad52;
             width: 100%;
             height: 100%;
         }
-        
     }
     .close-modal-btn {
         position: absolute;
@@ -276,6 +297,9 @@ $em-color: #e7ad52;
         right: 0;
         border: 0;
         background: rgba(#fff, 0.5);
+        padding: 0;
+        width: 30px;
+        height: 30px;
     }
     img.ecpay-cashier {
         width: 200px;
@@ -283,7 +307,9 @@ $em-color: #e7ad52;
     }
 }
 
-
+#hack-1, #hack-2, #hack-3 {
+    height: 100%;
+}
 
 .em-color {
     color: $em-color;
