@@ -26,7 +26,7 @@ Reveal.addEventListener('hack1-trigger', function() {
 });
 
 Reveal.addEventListener('hack2-trigger', function() {
-    $('#hack-2').html('<script async src="//jsfiddle.net/psdmac/m3dae2f7/31/embed/html/dark/"></script>');
+    $('#hack-2').html('<script async src="//jsfiddle.net/psdmac/m3dae2f7/46/embed/html,result/dark/"></script>');
 });
 
 Reveal.addEventListener('hack3-trigger', function() {
