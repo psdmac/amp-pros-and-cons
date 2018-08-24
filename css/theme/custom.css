@@ -139,7 +139,7 @@
         .reveal .content-right .logo-group .logo img.white-bg {
           background: #fff; }
 
-.reveal .question-bg, .reveal .danger-bg {
+.reveal .question-bg, .reveal .danger-bg, .reveal .pagespeed, .reveal .sad-bg {
   position: absolute;
   width: 100%;
   height: 30%;
@@ -149,10 +149,10 @@
   background-size: cover;
   background-position-y: 100%; }
   @media (min-width: 769px) {
-    .reveal .question-bg, .reveal .danger-bg {
+    .reveal .question-bg, .reveal .danger-bg, .reveal .pagespeed, .reveal .sad-bg {
       width: 50%;
       height: 100%; } }
-  .reveal .question-bg .img-credit, .reveal .danger-bg .img-credit {
+  .reveal .question-bg .img-credit, .reveal .danger-bg .img-credit, .reveal .pagespeed .img-credit, .reveal .sad-bg .img-credit {
     position: absolute;
     top: 5px;
     left: 5px; }
@@ -173,6 +173,16 @@
     font-size: 20px;
     padding: 0;
     z-index: 1; }
+
+.reveal .sad-bg {
+  background: url("../../img/anh-nguyen-515149-unsplash.jpg");
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.reveal .pagespeed {
+  background: url("../../img/pagespeed.jpg");
+  background-size: cover;
+  background-position: 50% 50%; }
 
 .reveal .half-left, .reveal .half-right {
   position: relative;
@@ -270,4 +280,7 @@
   height: 100%; }
 
 .em-color {
+  color: #e7ad52; }
+
+h2.em-color {
   color: #e7ad52; }

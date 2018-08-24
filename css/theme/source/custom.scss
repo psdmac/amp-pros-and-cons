@@ -178,7 +178,7 @@ $em-color: #e7ad52;
         }
 
     }
-    .question-bg, .danger-bg {
+    .question-bg, .danger-bg, .pagespeed, .sad-bg {
         position: absolute;
         width: 100%;
         height: 30%;
@@ -214,6 +214,17 @@ $em-color: #e7ad52;
             padding: 0;
             z-index: 1;
         }
+    }
+    .sad-bg {
+        background: url('../../img/anh-nguyen-515149-unsplash.jpg');
+        background-size: cover;
+        background-position: 50% 50%;
+        
+    }
+    .pagespeed {
+        background: url('../../img/pagespeed.jpg');
+        background-size: cover;
+        background-position: 50% 50%;
     }
     .half-left, .half-right {
         position: relative;
@@ -329,4 +340,7 @@ $em-color: #e7ad52;
     color: $em-color;
 }
 
+h2.em-color {
+    color: $em-color;
+}
 
